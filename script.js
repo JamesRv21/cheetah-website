@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // 1) Gallery Carousel Logic
   const galleryImages = [
     {
-      src: 'cheetah1.jpg',
+      src: 'cheetah1.jpeg',
       alt: 'Cheetah standing in grass'
     },
     {
