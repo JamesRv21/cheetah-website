@@ -4,19 +4,19 @@ window.addEventListener('DOMContentLoaded', () => {
   // 1) Gallery Carousel Logic
   const galleryImages = [
     {
-      src: 'https://cdn.pixabay.com/photo/2017/08/01/08/29/cheetah-2567316_1280.jpg',
+      src: 'cheetah1.jpg',
       alt: 'Cheetah standing in grass'
     },
     {
-      src: 'https://cdn.pixabay.com/photo/2013/09/06/01/09/cheetah-179034_1280.jpg',
+      src: 'cheetah2.jpeg',
       alt: 'Cheetah looking ahead'
     },
     {
-      src: 'https://cdn.pixabay.com/photo/2018/02/01/17/25/cheetah-3120206_1280.jpg',
+      src: 'cheetah3.jpeg',
       alt: 'Cheetah mid-run'
     },
     {
-      src: 'https://cdn.pixabay.com/photo/2014/11/08/10/09/cheetah-522599_1280.jpg',
+      src: 'cheetah4.jpeg',
       alt: 'Cheetah lounging on rock'
     }
   ];
