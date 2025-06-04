@@ -1,0 +1,277 @@
+/* style.css */
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0c27b; /* Warm cheetah-gold */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #8c5e1f; /* Rich brown */
+  color: #fff;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  height: 50px; /* Adjust as needed */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 25px;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffd700; /* Bright gold on hover */
+}
+
+/* Main Container */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Section Headings */
+main h1,
+main h2,
+main h3 {
+  color: #8c5e1f;
+  margin-bottom: 15px;
+}
+
+/* Hero (on Home) */
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Overview Box (Home) */
+.overview {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.overview p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Classification List (Home) */
+.classification {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.classification ul {
+  list-style: none;
+}
+
+.classification ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Team Section (About) */
+.team-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.team-member {
+  margin-bottom: 25px;
+}
+
+.team-member h3 {
+  margin-bottom: 8px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.team-member a.website {
+  color: #8c5e1f;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+
+.team-member a.website:hover {
+  color: #333;
+}
+
+/* Social Links (About) */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin-right: 20px;
+  font-weight: 600;
+  color: #8c5e1f;
+  transition: color 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #333;
+}
+
+/* Contact Form (Contact) */
+.contact-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-container label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  display: block;
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact-container textarea {
+  min-height: 150px;
+}
+
+.contact-container button {
+  margin-top: 20px;
+  padding: 12px 0;
+  background-color: #8c5e1f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  width: 100%;
+}
+
+.contact-container button:hover {
+  background-color: #6b4712;
+}
+
+/* Gallery Carousel */
+#gallery {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#carousel-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #8c5e1f;
+  color: #eee;
+  text-align: center;
+  padding: 20px 40px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+.footer-nav {
+  margin-bottom: 10px;
+}
+
+.footer-nav a {
+  color: #ffd700;
+  margin: 0 10px;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+}
+
+footer p a {
+  color: #ffd700;
+  transition: color 0.2s ease-in-out;
+}
+
+footer p a:hover {
+  color: #fff;
+}

@@ -3,126 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Scrum Zoo – About</title>
-  <style>
-    /* Global Reset */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4e1a1; /* Light cheetah-tone */
-      color: #333;
-      line-height: 1.6;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* Header & Navigation */
-    header {
-      background-color: #5c3d0c; /* Dark brown */
-      color: #fff;
-      padding: 15px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo {
-      font-size: 1.6rem;
-      font-weight: bold;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-    }
-    nav li {
-      margin-left: 30px;
-    }
-    nav a {
-      color: #fff;
-      font-weight: 500;
-      transition: color 0.2s ease-in-out;
-    }
-    nav a:hover {
-      color: #ffd700; /* Gold on hover */
-    }
-
-    /* Main Content */
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .container {
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
-      padding: 30px;
-    }
-    .container h2 {
-      color: #5c3d0c;
-      margin-bottom: 20px;
-    }
-    .team-list {
-      list-style: disc inside;
-      margin-bottom: 25px;
-    }
-    .team-list li {
-      font-size: 1rem;
-      margin-bottom: 8px;
-      color: #555;
-    }
-    .social-links a {
-      margin-right: 20px;
-      font-weight: 500;
-      color: #5c3d0c;
-      transition: color 0.2s ease-in-out;
-    }
-    .social-links a:hover {
-      color: #333;
-    }
-    .contact-link {
-      margin-top: 30px;
-      display: inline-block;
-      background-color: #5c3d0c;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 4px;
-      transition: background-color 0.2s ease-in-out;
-    }
-    .contact-link:hover {
-      background-color: #444;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #5c3d0c;
-      color: #eee;
-      text-align: center;
-      padding: 20px 40px;
-      margin-top: 40px;
-      font-size: 0.9rem;
-    }
-    footer a {
-      color: #ffd700;
-      margin: 0 10px;
-      transition: color 0.2s ease-in-out;
-    }
-    footer a:hover {
-      color: #fff;
-    }
-    .footer-nav {
-      margin-bottom: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
   <header>
-    <div class="logo">Scrum Zoo</div>
+    <div class="logo">
+      <a href="index.html">
+        <img src="logo.png" alt="Scrum Zoo Logo">
+        <h4>Scrum Zoo</h4>
+      </a>
+    </div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -135,15 +26,27 @@
 
   <!-- Main Content -->
   <main>
-    <div class="container">
+    <div class="team-container">
       <h2>About Us</h2>
       <p>Meet the dedicated team behind Scrum Zoo. We’re passionate about cheetahs and committed to conservation, education, and creating an unforgettable visitor experience.</p>
-      <h3>Our Team Members</h3>
-      <ul class="team-list">
-        <li>Linus</li>
-        <li>Katelyn</li>
-        <li>James</li>
-      </ul>
+      
+      <div class="team-member">
+        <h3><a class="website" href="https://linus.example.com" target="_blank">Linus</a></h3>
+        <p><strong>Position:</strong> Head Cheetah Caretaker</p>
+        <p>Linus has over 10 years of wildlife management experience. He oversees daily feeding, health checks, and enrichment activities for our resident cheetahs. When he's not at the zoo, he publishes articles on big cat conservation.</p>
+      </div>
+      
+      <div class="team-member">
+        <h3><a class="website" href="https://katelyn.example.com" target="_blank">Katelyn</a></h3>
+        <p><strong>Position:</strong> Education & Outreach Coordinator</p>
+        <p>Katelyn develops all educational programming, from guided tours to school workshops. She holds a degree in Zoology and loves creating interactive exhibits that teach visitors about cheetah ecology and conservation.</p>
+      </div>
+      
+      <div class="team-member">
+        <h3><a class="website" href="https://james.example.com" target="_blank">James</a></h3>
+        <p><strong>Position:</strong> Digital Media Manager</p>
+        <p>James handles Scrum Zoo’s website, social media, and multimedia campaigns. With a background in computer science and film, he produces our photo/video content and ensures our message reaches a global audience.</p>
+      </div>
 
       <h3>Follow Us on Social Media</h3>
       <div class="social-links">
@@ -152,7 +55,9 @@
         <a href="https://instagram.com/ScrumZoo" target="_blank">Instagram</a>
       </div>
 
-      <a class="contact-link" href="contact.html">Contact Us</a>
+      <p style="margin-top: 30px;">
+        <a class="website" href="contact.html">Contact Us</a>
+      </p>
     </div>
   </main>
 
@@ -171,5 +76,7 @@
       <a href="https://instagram.com/ScrumZoo" target="_blank">Instagram</a>
     </p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
