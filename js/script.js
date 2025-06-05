@@ -4,19 +4,19 @@ window.addEventListener('DOMContentLoaded', () => {
   // 1) Gallery Carousel Logic
   const galleryImages = [
     {
-      src: 'cheetah1.jpeg',
+      src: 'images/cheetah1.jpeg',
       alt: 'Cheetah Running Fast '
     },
     {
-      src: 'cheetah2.jpeg',
+      src: 'images/cheetah2.jpeg',
       alt: 'Cheetah Looking Ahead'
     },
     {
-      src: 'cheetah3.jpeg',
-      alt: 'Baby Cheetahs'
+      src: 'images/cheetah3.jpeg',
+      alt: 'Cubs'
     },
     {
-      src: 'cheetah4.jpeg',
+      src: 'images/cheetah4.jpeg',
       alt: 'Cheetah standing on a rock'
     }
   ];
@@ -96,3 +96,23 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+
+function loadHTML(id, file) {
+  fetch(file)
+    .then(response => {
+      if (!response.ok) throw new Error(`Failed to load ${file}`);
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+    })
+    .catch(err => console.error(err));
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  loadHTML('header', 'components/header.html');
+  loadHTML('footer', 'components/footer.html');
+
+  // You can also keep your other script logic here
+});
